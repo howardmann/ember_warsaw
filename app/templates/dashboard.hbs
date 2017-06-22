@@ -1,7 +1,11 @@
 <h2>Dashboard</h2>
+<p>Running balance: {{to-currency model.balance}}</p>
 <nav>
   {{link-to 'Overview' 'dashboard.overview'}} |
   {{link-to 'Incomes' 'dashboard.incomes'}} |
   {{link-to 'Expenses' 'dashboard.expenses'}}
 </nav>
-{{outlet}}
+<div style="border: solid 1px black; padding: 5px">
+  {{outlet}}
+</div>
+
